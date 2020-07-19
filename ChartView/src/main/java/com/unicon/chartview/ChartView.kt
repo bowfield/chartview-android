@@ -49,6 +49,7 @@ class ChartView(_context: Context, _attrs: AttributeSet) : View(_context, _attrs
             old = values[x]
         } while (x < values.size - 1)
 
+        invalidate()
         super.onDraw(canvas)
     }
 }
