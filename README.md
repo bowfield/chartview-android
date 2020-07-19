@@ -15,6 +15,9 @@
 
 ### Использование Kotlin
 ```kotlin
-chartview.values.add(10)
-//chartview.values.add(значение)
+chartview.chartColor = Color.RED // цвет графика
+chartview.borderColor = Color.GREEN // цвет рамки
+chartview.borderWidth = 6f // толщина рамки
+chartview.scale = 10f // маштаб
+chartview.values.add(10) // добавить значение
 ```
