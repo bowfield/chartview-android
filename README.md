@@ -2,7 +2,24 @@
 ![График](https://github.com/qbaddev/chartview-android/blob/master/image.jpg)
 
 ### Установка
-Добавить файл [ChartView.kt](https://github.com/qbaddev/chartview-android/blob/master/ChartView.kt) в проект
+Добавить в build.gradle который лежит в корне
+```gradle
+allprojects {
+	repositories {
+		//...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+
+Добавить зависимость
+```gradle
+dependencies {
+	implementation 'com.github.qbaddev:chartview-android:-SNAPSHOT'
+}
+```
+
+
 
 ### Использование Layout
 ```xml
