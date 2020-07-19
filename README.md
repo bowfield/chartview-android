@@ -23,7 +23,7 @@ dependencies {
 
 ### Использование Layout
 ```xml
-<ChartView
+<com.unicon.chartview.ChartView
   android:layout_width="match_parent"
   android:layout_height="200dp"
   android:id="@+id/chartview"
@@ -36,7 +36,7 @@ chartview.chartColor = Color.BLACK // цвет графика
 chartview.borderColor = Color.GREEN // цвет рамки
 chartview.borderWidth = 6f // толщина рамки
 chartview.scale = 10f // маштаб
-chartview.values.add(10) // добавить значение
+chartview.values.add(10) // добавить значение (минимум 3)
 ```
 
 ### TODO
