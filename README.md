@@ -1,4 +1,5 @@
 ## ChartView - Библиотека для рисования графиков в Android
+[![](https://jitpack.io/v/qbaddev/chartview-android.svg)](https://jitpack.io/#qbaddev/chartview-android)
 ![График](https://github.com/qbaddev/chartview-android/blob/master/image.jpg)
 
 ### Установка
