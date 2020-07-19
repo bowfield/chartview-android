@@ -4,7 +4,6 @@ import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
-import android.view.ViewGroup
 
 class ChartView(_context: Context, _attrs: AttributeSet) : View(_context, _attrs) {
     private var ctx = _context
@@ -12,8 +11,8 @@ class ChartView(_context: Context, _attrs: AttributeSet) : View(_context, _attrs
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
-    private var chartColor = Color.RED
-    private var borderColor = Color.BLACK
+    var chartColor = Color.RED
+    var borderColor = Color.BLACK
 
     var borderWidth = 4.0f
     var strokeWidth = 8f
@@ -28,6 +27,9 @@ class ChartView(_context: Context, _attrs: AttributeSet) : View(_context, _attrs
         paint.strokeWidth = borderWidth
 
         canvas.drawRect(Rect(0, 0, width, height), paint)
+
+        // не рисовать если мало точек
+        if(values.size < 2) return super.onDraw(canvas)
 
         paint.strokeWidth = strokeWidth
 
