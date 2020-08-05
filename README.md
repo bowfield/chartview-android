@@ -35,6 +35,7 @@ dependencies {
 ```kotlin
 chartview.chartColor = Color.BLACK // цвет графика
 chartview.borderColor = Color.GREEN // цвет рамки
+chartview.backColor = Color.WHITE // цвет фона
 chartview.borderWidth = 6f // толщина рамки
 chartview.scale = 10f // маштаб
 chartview.values.add(10) // добавить значение (минимум 3)
@@ -43,6 +44,6 @@ chartview.values.add(10) // добавить значение (минимум 3)
 ### TODO
 - [x] Рисование графиков
 - [x] Горизонтальное маштабирование
-- [ ] Вертикальное маштабирование
+- [x] Вертикальное маштабирование
 - [x] Публикация в jitpack.io
 - [ ] Мультиграфик
