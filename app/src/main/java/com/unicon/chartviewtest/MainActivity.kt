@@ -10,13 +10,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        chartview.chartColor = Color.BLACK // цвет графика
-        chartview.borderColor = Color.GREEN // цвет рамки
-        chartview.borderWidth = 6f // толщина рамки
-        chartview.scale = 10f // маштаб
+        chartview.values.add(22)
+        chartview.values.add(15)
+        chartview.values.add(44)
 
-        chartview.values.add(10) // добавить значение
-        chartview.values.add(5) // добавить значение
-        chartview.values.add(14) // добавить значение
+        button.setOnClickListener {
+            chartview.values.add(edittext.text.toString().toInt())
+        }
     }
 }
