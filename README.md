@@ -1,4 +1,4 @@
-## ChartView - Библиотека для рисования графиков в Android [![Релизы](https://img.shields.io/github/downloads/ktxdev/chartview-android/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
+## ChartView - Библиотека для рисования графиков в Android [![GitHub stars](https://img.shields.io/github/stars/ktxdev/chartview-android.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/ktxdev/chartview-android/stargazers/)
 [![](https://jitpack.io/v/qbaddev/chartview-android.svg)](https://jitpack.io/#qbaddev/chartview-android)<br>
 ![График](https://github.com/qbaddev/chartview-android/blob/master/image.jpg)
 
