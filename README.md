@@ -1,5 +1,5 @@
-## ChartView - Библиотека для рисования графиков в Android [![GitHub stars](https://img.shields.io/github/stars/ktxdev/chartview-android.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/ktxdev/chartview-android/stargazers/)
-[![](https://jitpack.io/v/qbaddev/chartview-android.svg)](https://jitpack.io/#qbaddev/chartview-android)<br>
+## ChartView - Библиотека для рисования графиков в Android
+[![](https://jitpack.io/v/qbaddev/chartview-android.svg)](https://jitpack.io/#qbaddev/chartview-android) [![GitHub stars](https://img.shields.io/github/stars/ktxdev/chartview-android.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/ktxdev/chartview-android/stargazers/)<br>
 ![График](https://github.com/qbaddev/chartview-android/blob/master/image.jpg)
 
 ### Установка
