@@ -16,10 +16,9 @@ allprojects {
 Добавить зависимость
 ```gradle
 dependencies {
-	implementation 'com.github.qbaddev:chartview-android:1.7'
+	implementation 'com.github.qbaddev:chartview-android:1.8'
 }
 ```
-
 
 
 ### Использование Layout
@@ -37,7 +36,9 @@ chartview.chartColor = Color.BLACK // цвет графика
 chartview.borderColor = Color.GREEN // цвет рамки
 chartview.backColor = Color.WHITE // цвет фона
 chartview.borderWidth = 6f // толщина рамки
+
 chartview.values.add(10) // добавить значение (минимум 3)
+chartview.update() // перерисовать график
 ```
 
 ### TODO

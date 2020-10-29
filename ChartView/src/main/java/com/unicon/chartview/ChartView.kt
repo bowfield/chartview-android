@@ -8,30 +8,25 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 class ChartView(_context: Context, _attrs: AttributeSet) : View(_context, _attrs) {
-    private var ctx = _context
-    private var attrs = _attrs
+    val backColor = Color.WHITE
+    val chartColor = Color.RED
+    val borderColor = Color.BLACK
+
+    val borderWidth = 4.0f
+    val strokeWidth = 8f
+
+    val values: ArrayList<Int> = ArrayList() // значения графика
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
-
-    var backColor = Color.WHITE
-    var chartColor = Color.RED
-    var borderColor = Color.BLACK
-
-    var borderWidth = 4.0f
-    var strokeWidth = 8f
-
-    var values: ArrayList<Int> = ArrayList()
-
-    override fun onDraw(canvas: Canvas) {
+    override fun onDraw(canvas: Canvas) { // отрисовка
         paint.color = backColor
         paint.style = Paint.Style.FILL
-        canvas.drawRect(0f, 0f, canvas.width + 0f, canvas.height + 0f, paint)
+        canvas.drawRect(0f, 0f, width + 0f, height + 0f, paint) // зарисовать фон
 
         paint.color = borderColor
         paint.style = Paint.Style.STROKE
         paint.strokeWidth = borderWidth
-
-        canvas.drawRect(Rect(0, 0, width, height), paint)
+        canvas.drawRect(0f, 0f, width + 0f, height + 0f, paint) // нарисовать рамку
 
         // не рисовать если мало точек
         if(values.size < 2) return super.onDraw(canvas)
@@ -53,8 +48,10 @@ class ChartView(_context: Context, _attrs: AttributeSet) : View(_context, _attrs
             x += 1
             old = values[x]
         } while (x < values.size - 1)
+    }
 
+    /* Отправить сигнал на перерисовку графика */
+    fun update() {
         invalidate()
-        super.onDraw(canvas)
     }
 }

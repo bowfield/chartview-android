@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             chartview.values.add(edittext.text.toString().toInt())
+            chartview.update()
         }
     }
 }
