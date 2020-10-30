@@ -16,7 +16,7 @@ allprojects {
 Добавить зависимость
 ```gradle
 dependencies {
-	implementation 'com.github.qbaddev:chartview-android:1.8'
+	implementation 'com.github.qbaddev:chartview-android:1.9'
 }
 ```
 
