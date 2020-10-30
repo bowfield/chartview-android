@@ -32,10 +32,25 @@ dependencies {
 
 ### Использование Kotlin
 ```kotlin
-chartview.chartColor = Color.BLACK // цвет графика
-chartview.borderColor = Color.GREEN // цвет рамки
-chartview.backColor = Color.WHITE // цвет фона
-chartview.borderWidth = 6f // толщина рамки
+// задать собственный стиль
+chartview.style = ChartViewStyle(
+    backgroundColor = Color.DKGRAY, // цвет фона
+    chartColor = Color.WHITE, // цвет графика
+    borderColor = Color.RED, // цвет рамки
+    textBackgroundColor = Color.CYAN, // цвет фона у текста
+    textColor = Color.BLACK, // цвет текста
+
+    borderWidth = 4f, // толщина рамки
+    strokeWidth = 8f, // толщина линий на графике
+
+    showValues = true, // рисовать значения точек на графике
+    showBorder = true // рисовать рамку
+)
+
+или
+
+chartview.style.showBorder = false
+
 
 chartview.values.add(10) // добавить значение (минимум 3)
 chartview.update() // перерисовать график
