@@ -47,7 +47,7 @@ chartview.style = ChartViewStyle(
     showBorder = true // рисовать рамку
 )
 
-или
+// или
 
 chartview.style.showBorder = false
 
@@ -61,4 +61,5 @@ chartview.update() // перерисовать график
 - [x] Горизонтальное маштабирование
 - [x] Вертикальное маштабирование
 - [x] Публикация в jitpack.io
+- [x] Кастомизация графика
 - [ ] Мультиграфик
